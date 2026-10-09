@@ -3,7 +3,9 @@ const captain = role === 'captain';
 module.exports = {
   expo: {
     name: captain ? 'يلا دليفري كابتن' : 'يلا دليفري متجر',
-    slug: captain ? 'yalla-delivery-captain' : 'yalla-delivery-store',
+    slug: 'yalladelivery',
+    owner: 'yalladeliverys-team',
+    extra: {eas: {projectId: 'c9dc1cbc-f5ec-459f-abdc-96998f99de7c'}},
     version: '0.1.0',
     orientation: 'portrait',
     userInterfaceStyle: 'light',
