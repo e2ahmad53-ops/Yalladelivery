@@ -1,0 +1,8 @@
+{
+  "build": {
+    "store-preview": {"distribution":"internal","env":{"EXPO_PUBLIC_APP_ROLE":"store"},"android":{"buildType":"apk"}},
+    "captain-preview": {"distribution":"internal","env":{"EXPO_PUBLIC_APP_ROLE":"captain"},"android":{"buildType":"apk"}},
+    "store-production": {"env":{"EXPO_PUBLIC_APP_ROLE":"store"}},
+    "captain-production": {"env":{"EXPO_PUBLIC_APP_ROLE":"captain"}}
+  }
+}

@@ -1,0 +1,15 @@
+data/
+*.sqlite3
+*.sqlite3-*
+__pycache__/
+*.pyc
+node_modules/
+.expo/
+dist/
+.env
+.env.*
+!.env.example
+*.keystore
+*.p12
+*.mobileprovision
+coverage/

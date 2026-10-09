@@ -1,0 +1,23 @@
+{
+  "name": "yalla-delivery-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "start:store": "EXPO_PUBLIC_APP_ROLE=store expo start",
+    "start:captain": "EXPO_PUBLIC_APP_ROLE=captain expo start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "expo": "~55.0.0",
+    "expo-location": "~55.1.14",
+    "expo-secure-store": "~55.0.0",
+    "react": "19.2.0",
+    "react-native": "0.83.10"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.2",
+    "@types/react": "~19.2.0"
+  }
+}
