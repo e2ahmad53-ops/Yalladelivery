@@ -6,14 +6,14 @@
 
 1. افتح https://dashboard.render.com وسجل الدخول أو أنشئ حسابك.
 2. اربط GitHub مع Render واسمح له بالوصول إلى مستودع e2ahmad53-ops/Yalladelivery فقط.
-3. اختر New ثم Blueprint وحدد المستودع والفرع main؛ ملف render.yaml يحدد خدمة واحدة بخطة Free.
+3. اختر New ثم Blueprint وحدد المستودع والفرع render-free-demo؛ ملف render.yaml يحدد خدمة واحدة بخطة Free.
 4. في YALLA_DEMO_PASSWORD أدخل كلمة مرور خاصة بالتجربة من 16 إلى 200 حرف دون مسافات طرفية. لا ترسل كلمة المرور في المحادثة ولا تضعها على GitHub.
 5. تحقق من أن الخطة Free قبل النشر. لا توافق على ترقية مدفوعة.
 6. بعد وصول الخدمة إلى Live افتح عنوان HTTPS الذي يعطيك Render. تحقق أيضاً من /api/health.
 
 إذا لم تظهر Blueprint، استخدم New > Web Service وحدد المستودع مع الإعدادات التالية:
 - Runtime: Python 3
-- Branch: main
+- Branch: render-free-demo
 - Root Directory: اتركه فارغاً
 - Build Command: python -m compileall -q backend
 - Start Command: python backend/demo_server.py
