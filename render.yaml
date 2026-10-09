@@ -1,0 +1,18 @@
+# Disposable test data only. No paid resources are declared.
+services:
+  - type: web
+    name: yalla-delivery-demo
+    runtime: python
+    plan: free
+    buildCommand: python -m compileall -q backend
+    startCommand: python backend/demo_server.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: YALLA_DEMO
+        value: "1"
+      - key: YALLA_DB
+        value: /tmp/yalla-demo/yalla.sqlite3
+      - key: YALLA_DEMO_PASSWORD
+        sync: false
